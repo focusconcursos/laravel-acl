@@ -1,0 +1,51 @@
+{
+    "name": "mahesvaran/laravel-acl",
+    "type": "library",
+    "description": "A simple role and permission based laravel acl package",
+    "keywords": [
+        "mahesvaran",
+        "laravel",
+        "laravel-acl"
+    ],
+    "homepage": "https://github.com/mahesvaran/laravel-acl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahesvaran A",
+            "email": "amahesvaran@gmail.com",
+            "homepage": "http://github.com/mahesvaran",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.5|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "squizlabs/php_codesniffer": "^2.6",
+        "phpmd/phpmd": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mahesvaran\\LaravelAcl\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mahesvaran\\LaravelAcl\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": [
+            "php vendor/bin/phpmd . text phpmd.xml",
+            "php vendor/bin/phpcs --standard=phpcs.xml app/",
+            "php vendor/bin/phpunit"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
