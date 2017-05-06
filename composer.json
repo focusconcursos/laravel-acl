@@ -1,5 +1,5 @@
 {
-    "name": "mahesvaran/laravel-acl",
+    "name": "focusconcursos/laravel-acl",
     "type": "library",
     "description": "A simple role and permission based laravel acl package",
     "keywords": [
